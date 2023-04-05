@@ -3,15 +3,11 @@
     
 }
 .header {
-    padding: 10px;
+    padding: 15px;
 }
 .components {
     margin-left: auto;
     align-items: center;
-
-    
-    
-    
 }
 
 .cta {
@@ -40,8 +36,83 @@
     text-decoration: none; 
 }
 
-  @media only screen and (max-width: 958px) {
+  @media only screen and (max-width: 1030px) {
     .headerButton {
         display: none;
     }
+    #sidebar {
+        display: none;
+    }
+    .email {
+        display: none;
+    }
+    #leftSidebar {
+        display: none;
+    }
   } 
+
+
+  #sidebar {
+    position: fixed;
+
+    right: 0;
+    color: white;
+    bottom: 200px;
+    transform: rotate(90deg);
+    
+  }
+.email {
+    color: rgba(48,93,129,1);
+    font-size: 15px;
+}
+.email:link {
+    text-decoration: none; 
+}
+.email:hover {
+    color: #7fe8d4;
+}
+.email:after {
+        content:"";
+        top:50%;
+        width:100%;
+        margin-left:10px;
+        height:1px;
+        position:absolute;
+        background: rgba(60, 93, 128, 0.6);   
+}
+.email:hover:after {
+    background: #7fe8d4;
+}
+.scroll {
+    height: 1000px;
+}
+#leftSidebar {
+    position: fixed;
+
+    left: 0;
+    color: white;
+    bottom: 200px;
+    transform: rotate(90deg);
+    
+  }
+#leftSidebar:after {
+    content:"";
+    top:50%;
+    width:100%;
+    margin-left: 10px;
+    height:1px;
+    position:absolute;
+    background: rgba(60, 93, 128, 0.6);
+}
+.git {
+    padding-right: 10px;
+    transform: rotate(-90deg);
+    filter: invert(33%) sepia(57%) saturate(383%) hue-rotate(170deg) brightness(90%) contrast(94%);
+}
+.git:hover {
+    filter: invert(88%) sepia(63%) saturate(339%) hue-rotate(87deg) brightness(97%) contrast(88%);
+}
+    .lsb {
+    color: #ce9178;
+}
+
