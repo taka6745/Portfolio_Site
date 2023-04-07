@@ -1,0 +1,29 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "database": "mydatabase",
+      "username": "root",
+      "name": "Connection"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "sql943.main-hosting.eu",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "projects",
+      "database": "u561601930_projects",
+      "username": "u561601930_takoda",
+      "password": "0z#G65fp[jV+"
+    }
+  ]
+}
