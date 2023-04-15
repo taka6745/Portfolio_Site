@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Takoda from "./pages/Takoda";
+import Update from "./pages/Update";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -9,10 +9,8 @@ function App() {
       <Routes>
        
           <Route index element={<Home />} />
-          <Route path="Takoda">
-            <Route path=":number" element={<Takoda />} />
-        
-          </Route>
+          <Route path="update" element={<Update />}/>
+
           <Route path="*" element={<NoPage />} />
   
       </Routes>

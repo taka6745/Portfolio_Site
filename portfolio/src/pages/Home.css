@@ -63,6 +63,9 @@
     .actionStatement {
         display: none;
     }
+    .head {
+        display: none;
+    }
 }
 .aboutInner {
     display: flex;
@@ -71,6 +74,8 @@
 }
 .head {
     border-radius: 10px;
+    width: 300px;
+    height: 300px;
     
 }
 
