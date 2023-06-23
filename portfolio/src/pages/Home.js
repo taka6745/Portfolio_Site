@@ -1,9 +1,19 @@
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Layout from "./Layout";
 import headshot from "../media/headshot.jpeg";
 import ProjectBlock from "./ProjectBlock";
 
 function Takoda() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/git")
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error("Error fetching projects:", error));
+  }, []);
+
   return (
     <>
       <Layout>
@@ -44,9 +54,12 @@ function Takoda() {
           </div>
         </div>
 
-        <div className="scroll"></div>
+        <div className="projects-container">
+          {projects.map((project) => (
+            <ProjectBlock key={project.id} data={project} />
+          ))}
+        </div>
       </Layout>
-      <ProjectBlock data={"LIGMA"} />
     </>
   );
 }
