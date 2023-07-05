@@ -2,7 +2,7 @@
     "title": "Portfolio Site",
     "description": "This project is a portfolio website showcasing my work, projects, and resume. It is built using React, HTML, CSS, and JavaScript to create a responsive and modern user interface. The website integrates with the GitHub Portfolio API to fetch and display project data dynamically.",
     "type": "Website",
-    "photo": "https://static.thenounproject.com/png/3486483-200.png",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQAefcr3KAiPYjMkBsZIAal65YhAOuEmRRbOPj_kKEGpQ3h4WSJHjqHmwb9im9lNd0vg&usqp=CAU",
     "tags": "React, HTML, CSS, JavaScript",
     "related_projects": "GitHub Portfolio API"
 }
